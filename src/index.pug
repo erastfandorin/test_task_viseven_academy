@@ -1,0 +1,87 @@
+doctype html
+html(lang="en")
+  head
+    link(href="styles/style.css" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet")
+    title Margo Smith
+  body
+    header.header.cont
+      nav.header-menu
+        ul.header-menu__list
+          li.header-menu__item
+            a(href="#home").header-menu__link Home
+          li.header-menu__item 
+            a(href="#about-me").header-menu__link About me
+          li.header-menu__item 
+            a(href="#skills").header-menu__link Skills
+          li.header-menu__item 
+            a(href="#portfolio").header-menu__link Portfolio
+          li.header-menu__item 
+            a(href="#contacts").header-menu__link Contacts
+    section.section-home.cont
+      div.section-home__box-info
+        h1#home.section-home__headline Margo Smith
+        p.section-home__text UX | UI designer from California 24 years old
+      img(src='img/notebook.jpg' alt="notebook").section-home__img
+    section.section-about-me 
+      h2#about-me.section-about-me__headline.headline About me
+      div.section-about-me__box-about.cont
+        img(src="img/margo-smith.jpg" alt="Margo Smith").section-about-me__img
+        p.section-about-me__text  Hi, I'm Margo – UX/UI designer from California. 
+                                | I'm interested in design and everything connected with it. #[br]#[br]
+                                | I'm studying at courses "Web and mobile design interfaces" in IT-Academy.#[br]#[br]
+                                | Ready to implement excellent projects with wonderful people.
+    section.section-skills.cont
+      h2#skills.section-skills__headline.headline Skills
+      ul.section-skills__list 
+        li.section-skills__item 
+          figure.section-skills__item-figure
+            img(src="img/skills-icon/icon-photoshop.svg" alt="Adobe Photoshop").section-skills__item-img
+            figcaption.section-skills__item-text Adobe Photoshop
+        li.section-skills__item 
+          figure.section-skills__item-figure
+            img(src="img/skills-icon/icon-illustrator.svg" alt="Adobe Illustrator").section-skills__item-img
+            figcaption.section-skills__item-text Adobe Illustrator
+        li.section-skills__item 
+          figure.section-skills__item-figure
+            img(src="img/skills-icon/icon-after-effects.svg" alt="Adobe After Effects").section-skills__item-img
+            figcaption.section-skills__item-text Adobe After Effects
+        li.section-skills__item 
+          figure.section-skills__item-figure
+            img(src="img/skills-icon/icon-figma.svg" alt="Figma").section-skills__item-img
+            figcaption.section-skills__item-text Figma
+    section.section-portfolio 
+      h2#portfolio.section-portfolio__headline.headline Portfolio
+      ul.section-portfolio__list.cont
+        li.section-portfolio__item 
+          figure.section-portfolio__item-figure
+            img(src="img/portfolio/sneakers.jpg" alt="Sneakers").section-portfolio__item-img
+            figcaption.section-portfolio__item-text
+              a(href="/").section-portfolio__item-link Online fashion store - Homepage
+        li.section-portfolio__item 
+          figure.section-portfolio__item-figure
+            img(src="img/portfolio/helias.jpg" alt="Helias").section-portfolio__item-img
+            figcaption.section-portfolio__item-text
+              a(href="/").section-portfolio__item-link Helias Store - Concept
+        li.section-portfolio__item 
+          figure.section-portfolio__item-figure
+            img(src="img/portfolio/hoang-nguen.jpg" alt="Hoang Nguen").section-portfolio__item-img
+            figcaption.section-portfolio__item-text
+              a(href="/").section-portfolio__item-link Hoang Nguen Landing Page - Concept
+    footer.footer 
+      h2#contacts.footer__headline.headline Contacts
+      ul.footer__social-icon-list
+        li.footer__social-icon-item
+          a(href="https://www.linkedin.com/").footer__social-icon-link
+            img(src="img/contacts-icon/linkedin.svg" alt="linkedin").footer__social-icon-img
+        li.footer__social-icon-item
+          a(href="https://www.instagram.com/").footer__social-icon-link
+            img(src="img/contacts-icon/instagram.svg" alt="instagram").footer__social-icon-img
+        li.footer__social-icon-item
+          a(href="https://www.linkedin.com/").footer__social-icon-link
+            img(src="img/contacts-icon/be.svg" alt="be").footer__social-icon-img
+        li.footer__social-icon-item
+          a(href="https://www.instagram.com/").footer__social-icon-link
+            img(src="img/contacts-icon/ball.svg" alt="ball").footer__social-icon-img
+
+        
