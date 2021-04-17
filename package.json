@@ -1,0 +1,23 @@
+{
+  "name": "landing-test-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erastfandorin/test_task_viseven_academy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erastfandorin/test_task_viseven_academy/issues"
+  },
+  "homepage": "https://github.com/erastfandorin/test_task_viseven_academy",
+  "dependencies": {
+    "gh-pages": "^3.1.0",
+    "pug": "^3.0.2"
+  }
+}

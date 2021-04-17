@@ -1,30 +1,34 @@
 doctype html
 html(lang="en")
   head
-    link(href="styles/style.css" rel="stylesheet")
-    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet")
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width,initial-scale=1")
     title Margo Smith
+    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet")
+    link(href="styles/style.css" rel="stylesheet")
   body
     header.header.cont
-      nav.header-menu
-        ul.header-menu__list
+      .header-menu-burger-wrapper
+        .header-menu-burger
+      nav.header-menu 
+        ul.header-menu__list.cont
           li.header-menu__item
-            a(href="#home").header-menu__link Home
+            a(data-goto=".section-home" href="#").header-menu__link Home
           li.header-menu__item 
-            a(href="#about-me").header-menu__link About me
+            a(data-goto=".section-about-me" href="#").header-menu__link About me
           li.header-menu__item 
-            a(href="#skills").header-menu__link Skills
+            a(data-goto=".section-skills" href="#").header-menu__link Skills
           li.header-menu__item 
-            a(href="#portfolio").header-menu__link Portfolio
+            a(data-goto=".section-portfolio " href="#").header-menu__link Portfolio
           li.header-menu__item 
-            a(href="#contacts").header-menu__link Contacts
+            a(data-goto=".footer " href="#").header-menu__link Contacts
     section.section-home.cont
       div.section-home__box-info
-        h1#home.section-home__headline Margo Smith
+        h1.section-home__headline Margo Smith
         p.section-home__text UX | UI designer from California 24 years old
       img(src='img/notebook.jpg' alt="notebook").section-home__img
     section.section-about-me 
-      h2#about-me.section-about-me__headline.headline About me
+      h2.section-about-me__headline.headline About me
       div.section-about-me__box-about.cont
         img(src="img/margo-smith.jpg" alt="Margo Smith").section-about-me__img
         p.section-about-me__text  Hi, I'm Margo – UX/UI designer from California. 
@@ -32,7 +36,7 @@ html(lang="en")
                                 | I'm studying at courses "Web and mobile design interfaces" in IT-Academy.#[br]#[br]
                                 | Ready to implement excellent projects with wonderful people.
     section.section-skills.cont
-      h2#skills.section-skills__headline.headline Skills
+      h2.section-skills__headline.headline Skills
       ul.section-skills__list 
         li.section-skills__item 
           figure.section-skills__item-figure
@@ -51,25 +55,25 @@ html(lang="en")
             img(src="img/skills-icon/icon-figma.svg" alt="Figma").section-skills__item-img
             figcaption.section-skills__item-text Figma
     section.section-portfolio 
-      h2#portfolio.section-portfolio__headline.headline Portfolio
+      h2.section-portfolio__headline.headline Portfolio
       ul.section-portfolio__list.cont
         li.section-portfolio__item 
-          figure.section-portfolio__item-figure
-            img(src="img/portfolio/sneakers.jpg" alt="Sneakers").section-portfolio__item-img
-            figcaption.section-portfolio__item-text
-              a(href="/").section-portfolio__item-link Online fashion store - Homepage
+          a(href="/").section-portfolio__item-link
+            figure.section-portfolio__item-figure
+              img(src="img/portfolio/sneakers.jpg" alt="Sneakers").section-portfolio__item-img
+              figcaption.section-portfolio__item-text Online fashion store - Homepage
         li.section-portfolio__item 
-          figure.section-portfolio__item-figure
-            img(src="img/portfolio/helias.jpg" alt="Helias").section-portfolio__item-img
-            figcaption.section-portfolio__item-text
-              a(href="/").section-portfolio__item-link Helias Store - Concept
+          a(href="/").section-portfolio__item-link
+            figure.section-portfolio__item-figure
+              img(src="img/portfolio/helias.jpg" alt="Helias").section-portfolio__item-img
+              figcaption.section-portfolio__item-text Helias Store - Concept
         li.section-portfolio__item 
-          figure.section-portfolio__item-figure
-            img(src="img/portfolio/hoang-nguen.jpg" alt="Hoang Nguen").section-portfolio__item-img
-            figcaption.section-portfolio__item-text
-              a(href="/").section-portfolio__item-link Hoang Nguen Landing Page - Concept
+          a(href="/").section-portfolio__item-link
+            figure.section-portfolio__item-figure
+              img(src="img/portfolio/hoang-nguen.jpg" alt="Hoang Nguen").section-portfolio__item-img
+              figcaption.section-portfolio__item-text Hoang Nguen Landing Page - Concept
     footer.footer 
-      h2#contacts.footer__headline.headline Contacts
+      h2.footer__headline.headline Contacts
       ul.footer__social-icon-list
         li.footer__social-icon-item
           a(href="https://www.linkedin.com/").footer__social-icon-link
@@ -78,10 +82,12 @@ html(lang="en")
           a(href="https://www.instagram.com/").footer__social-icon-link
             img(src="img/contacts-icon/instagram.svg" alt="instagram").footer__social-icon-img
         li.footer__social-icon-item
-          a(href="https://www.linkedin.com/").footer__social-icon-link
+          a(href="https://www.behance.net/").footer__social-icon-link
             img(src="img/contacts-icon/be.svg" alt="be").footer__social-icon-img
         li.footer__social-icon-item
-          a(href="https://www.instagram.com/").footer__social-icon-link
+          a(href="https://dribbble.com/").footer__social-icon-link
             img(src="img/contacts-icon/ball.svg" alt="ball").footer__social-icon-img
+    script(src="./js/script.js")
+
 
         
